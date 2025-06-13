@@ -1,0 +1,154 @@
+/* Стили для страницы сводных оценок */      
+.grades-summary-table th { 
+    white-space: nowrap; 
+    background-color: #f8f9fa; 
+}
+        
+.grades-summary-table td { 
+    vertical-align: middle; 
+}
+        
+.grade-final-3 { 
+    color: #6c757d; 
+}
+        
+.grade-final-4 { 
+    color: #0d6efd; 
+}
+        
+.grade-final-5 { 
+    color: #198754; 
+    font-weight: bold;
+} /* Отлично */
+        
+.grade-final-2 { 
+    color: #dc3545; 
+} /* Неудовлетворительно */
+        
+.status-passed { 
+    color: #198754; 
+    font-weight: bold; 
+} /* Зачтено */
+        
+.status-failed { 
+    color: #dc3545; 
+    font-weight: bold; 
+} /* Незачет (Долг) */
+        
+.status-pending { 
+    color: #6c757d; 
+} /* Ожидается */
+        
+.empty-state { 
+    text-align: center; 
+    color: #6c757d; 
+    padding: 2rem; 
+}
+        
+.card { 
+    overflow: hidden; 
+}
+        
+/*из student_tasks*/
+.tasks-table th { 
+    white-space: nowrap; 
+    background-color: #f8f9fa; 
+}
+        
+.tasks-table td { 
+    vertical-align: middle; 
+}
+        
+.status-icon { 
+    font-size: 1.2em; 
+    margin-right: 5px; 
+}
+        
+.text-success { 
+    color: #198754 !important; 
+} .text-warning { 
+    color: #ffc107 !important; 
+}
+        
+.text-danger { 
+    color: #dc3545 !important; 
+} 
+
+.text-muted { 
+    color: #6c757d !important; 
+}
+        
+.text-info { 
+    color: #0dcaf0 !important; 
+}
+        
+.grade-badge { 
+    font-weight: bold; 
+    display: inline-block; 
+    min-width: 30px; 
+    text-align: center; 
+    padding: 0.2em 0.4em; 
+    border-radius: .25rem; 
+    font-size: 0.9em; 
+}
+        
+.grade-badge-good { 
+    background-color: #d1e7dd; 
+    color: #0f5132; 
+}
+        
+.grade-badge-ok { 
+    background-color: #fff3cd; 
+    color: #664d03; 
+}
+       
+.grade-badge-bad {
+    background-color: #f8d7da; 
+    color: #842029; 
+}
+        
+.deadline-none { 
+    color: #6c757d; 
+}
+        
+.deadline-warning { 
+    background-color: #fff3cd; 
+    color: #664d03; 
+}
+        
+.deadline-critical { 
+    background-color: #f8d7da; 
+    color: #842029; 
+    font-weight: bold; 
+}
+        
+.deadline-submitted-late { 
+    color: #dc3545; 
+}
+        
+.deadline-error { 
+    color: #dc3545; 
+    font-style: italic; 
+}
+        
+.empty-state { 
+    text-align: center; 
+    color: #6c757d; 
+    padding: 2rem; 
+}
+        
+.card { 
+    overflow: hidden;
+}
+        
+.subject-header-info { 
+    background-color: #e9ecef; 
+    padding: 1rem 1.5rem; 
+    margin-bottom: 1.5rem; 
+    border-radius: 5px;
+}
+        
+.subject-header-info h2 { 
+    margin-bottom: 0; 
+    font-size: 1.2rem; 
+}

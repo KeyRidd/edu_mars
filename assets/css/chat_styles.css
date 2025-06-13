@@ -1,0 +1,101 @@
+#chat-messages-list { 
+    list-style-type: none; 
+    padding-left: 0; 
+    max-height: 500px; 
+    overflow-y: auto; 
+    margin-bottom: 1rem; 
+    background-color: #f8f9fa; 
+    border-radius: 5px;
+}
+        
+.message-item { 
+    background-color: #fff; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+    transition: background-color 0.2s ease;
+}
+        
+.message-item.message-own { 
+    background-color: #e9f5ff; 
+}
+        
+.message-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 0.3rem; 
+    flex-wrap: wrap;
+}
+
+.message-author { 
+    font-weight: bold; 
+    margin-right: auto; 
+}
+        
+.message-time { 
+    font-size: 0.8em; 
+    color: #6c757d; 
+    margin-left: 10px; 
+    white-space: nowrap;
+}
+        
+.message-content p { 
+    margin-bottom: 0; 
+    word-wrap: break-word; 
+}
+        
+.chat-form form { 
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+}
+        
+.chat-form textarea { 
+    flex-grow: 1; 
+    resize: vertical; 
+}
+        
+.badge { 
+    font-size: 0.75em; 
+    vertical-align: middle; 
+    margin-left: 5px; 
+}
+        
+.role-teacher { 
+    background-color: #198754; 
+    color: white; 
+}
+        
+.role-admin { 
+    background-color: #dc3545; 
+    color: white; 
+}
+        
+.chat-message-actions { 
+    font-size: 0.9em; 
+    margin-left: 10px; 
+}
+        
+.chat-message-actions button { 
+    text-decoration: none; 
+}
+        
+.chat-edit-form textarea { 
+    font-size: 0.95em; 
+}
+        
+.chat-edited-indicator { 
+    font-size: 0.8em; 
+    color: #6c757d; 
+    font-style: italic; 
+}
+        
+.visually-hidden { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px;
+    padding: 0; 
+    overflow: hidden; 
+    clip: rect(0, 0, 0, 0); 
+    border: 0; 
+}

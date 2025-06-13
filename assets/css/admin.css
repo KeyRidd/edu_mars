@@ -1,0 +1,185 @@
+/* Таблицы */
+.assignments-table th, 
+.assignments-table td { 
+    padding: 0.5rem 0.75rem;
+    vertical-align: middle; 
+}
+/* Отступы для кнопок действий в таблицах админки */
+.table .actions a + a, /* Отступ между ссылками */
+.table .actions button + button, /* Отступ между кнопками */
+.table .actions a + button,
+.table .actions button + a {
+    margin-left: 0.3rem; 
+}
+/* Формы */
+.add-assignment-form { 
+    display: flex; 
+    align-items: flex-end;
+    flex-wrap: wrap; 
+    gap: 1rem;
+    border-top: 1px solid var(--border-color, #e0e0e0);
+    padding-top: 1rem; 
+    margin-top: 1rem;
+    width: 100%;
+}
+.add-assignment-form .form-group { 
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+/* Списки*/
+.students-list ul {
+    list-style: none; 
+    padding-left: 0; 
+    margin-bottom: 0;
+}
+.students-list li { 
+    margin-bottom: 0.25rem;
+}
+/* Карточки */
+.section-card { 
+    margin-bottom: 20px; 
+}
+/* Скрытие блока по ID (для admin_users.php) */
+#group-assignment-section { 
+    display: none; 
+}
+/* Карточки-ссылки на главной админки */
+.admin-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem; /* Немного увеличим gap */
+    margin-top: 1.5rem;
+}
+.admin-link-card {
+    display: block;
+    text-decoration: none;
+    color: var(--dark-text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+.admin-link-card i {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+    color: var(--primary); 
+}
+.admin-link-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.15em;
+    color: inherit;
+}
+.admin-link-card p {
+    font-size: 0.9em;
+    color: var(--text-muted, #6c757d);
+    margin-bottom: 0;
+}
+.dark-mode .admin-link-card {
+    color: var(--light-text);
+}
+.dark-mode .admin-link-card i {
+    color: var(--accent); 
+}
+.dark-mode .admin-link-card p {
+    color: var(--text-muted-dark-theme, #a8b2bc);
+}
+/* Стили для страницы group_info.php */
+.info-section { 
+    margin-bottom: 2rem; 
+    padding: 1rem;
+}
+.info-section h2 { 
+    font-size: 1.4rem;
+    margin-bottom: 1rem; 
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color, #e0e0e0); 
+}   
+.assignments-list ul {
+    list-style: none; 
+    padding-left: 0; 
+    margin-bottom: 0;
+}
+.assignments-list li { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.5rem 0; 
+    border-bottom: 1px dotted var(--border-color, #e0e0e0); 
+}
+.assignments-list li:last-child { 
+    border-bottom: none; 
+}
+/*Раздел статистики*/
+.stat-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+.stat-section:last-child {
+    border-bottom: none;
+}
+.stat-section h2 { /* Стили для заголовков секций */
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-text);
+}
+.dark-mode .stat-section h2 {
+    color: var(--heading-color-dark, var(--light-text));
+}
+.stat-card {
+    margin-bottom: 1.5rem;
+}
+.stat-card .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary); /* Используем основной цвет темы */
+    margin-bottom: 0.5rem;
+}
+.dark-mode .stat-card .stat-number {
+    color: var(--accent);
+}
+.stat-card .stat-label {
+    font-size: 1rem;
+    color: var(--text-muted, #6c757d);
+}
+.stat-list { 
+    list-style: none; 
+    padding-left: 0; 
+    margin-top: 1rem;
+}
+.stat-list li { 
+    padding: 0.5rem 0; 
+    border-bottom: 1px dotted var(--border-color-light-dotted, var(--border-color));
+}
+.dark-mode .stat-list li {
+    border-bottom-color: var(--border-color-dark-dotted, var(--border-color-dark-theme));
+}
+.stat-list li:last-child { 
+    border-bottom: none; 
+}
+.stat-list strong { 
+    color: var(--primary);
+    font-weight: 600;
+}
+.dark-mode .stat-list strong {
+    color: var(--accent);
+}
+/*из home_admin*/
+.welcome-message-admin {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.dark-mode .welcome-message-admin {
+    background-color: var(--card-bg-dark-theme, var(--dark-bg));
+    color: var(--light-text);
+}
+/*из manage_lesson_assignments*/
+.existing-files-list ul { 
+    margin-top: 0.5rem; 
+    padding-left: 1.5rem; 
+}
+.existing-files-list li { 
+    margin-bottom: 0.25rem; 
+}

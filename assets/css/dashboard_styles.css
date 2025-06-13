@@ -1,0 +1,138 @@
+/* Стили для Дашбордов и списков уроков*/
+.content-header { 
+    padding: 1rem 1.5rem; 
+    background-color: var(--content-header-bg, #e9ecef);
+    border-radius: var(--border-radius-sm, 5px);
+    margin-bottom: 1.5rem;
+}
+.dark-mode .content-header {
+    background-color: var(--content-header-bg-dark, #2a3150);
+    color: var(--light-text);
+}
+.dark-mode .content-header h1,
+.dark-mode .content-header h2,
+.dark-mode .content-header h3,
+.dark-mode .content-header p {
+    color: var(--light-text);
+}
+.lessons-list { 
+    padding-right: 5px;
+}
+.lesson-item-small { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0.75rem 0.25rem;
+    border-bottom: 1px solid var(--border-color, #e0e0e0); 
+}
+.dark-mode .lesson-item-small {
+    border-bottom-color: var(--border-color-dark-theme, #444);
+}
+.lesson-item-small:last-child { 
+    border-bottom: none; 
+}
+.lesson-item-small h3 { 
+    font-size: 1rem; 
+    margin-bottom: 0;
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+}
+.lesson-item-small h3 a { 
+    text-decoration: none;
+    color: var(--link-color, var(--primary));
+}
+.dark-mode .lesson-item-small h3 a {
+    color: var(--link-color-dark, var(--accent));
+}
+.lesson-item-small h3 a:hover {
+    color: var(--link-hover-color, var(--secondary));
+}
+.dark-mode .lesson-item-small h3 a:hover {
+    color: var(--link-hover-color-dark, var(--primary));
+}
+.lesson-item-small .text-muted { 
+    font-size: 0.85em; 
+    color: var(--text-muted, #6c757d);
+}
+.lesson-item-small.lesson-future .lesson-date {
+    font-weight: 500; 
+}
+.empty-state { 
+    text-align: center; 
+    color: var(--text-muted, #6c757d); 
+    padding: 2rem; 
+    background-color: var(--empty-state-bg, #f8f9fa); 
+    border-radius: var(--border-radius-md, 8px);
+}
+.dark-mode .empty-state {
+    color: var(--text-muted-dark-theme, #a8b2bc);
+    background-color: var(--empty-state-bg-dark, #212529);
+}
+/* Общий класс для контейнеров со скроллом */
+.scrollable-card-content { 
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+    padding: 1rem; 
+    border-top: 1px solid var(--border-color, #e0e0e0);
+}
+.dark-mode .scrollable-card-content {
+    border-top-color: var(--border-color-dark-theme, #444);
+}
+@media (max-width: 768px) { 
+    .scrollable-card-content { 
+        max-height: none;
+    } 
+}
+/* Индикаторы */
+.lesson-indicator-dot { 
+    display: inline-block; 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+    vertical-align: middle; 
+    flex-shrink: 0; 
+    margin-right: 5px;
+}
+.lesson-indicator-dot.indicator-warning {
+     background-color: var(--warning-color, #ffc107);
+     box-shadow: 0 0 5px var(--warning-color, #ffc107);
+}
+
+.lesson-indicator-chat {
+    font-size: 0.75em;
+    font-weight: 600;
+    padding: 0.2em 0.5em;
+    margin-left: 8px; 
+    vertical-align: middle;
+    background-color: var(--success-color, #198754); 
+    color: var(--light-text);
+    border-radius: var(--border-radius-sm, .25rem);
+    line-height: 1; 
+}
+.dark-mode .lesson-indicator-chat {
+    background-color: var(--success-color-dark, #20c997);
+    color: var(--dark-text);
+}
+/*для расписания*/
+.schedule-controls .form-label {
+    font-size: 0.875rem;
+}
+.schedule-day-card.today-highlight .card-header {
+    border-left: 4px solid var(--bs-info);
+}
+.bg-admin-subtle {
+    background-color: #e9ecef;
+}
+.bg-teacher-subtle {
+    background-color: #d1e7dd; 
+}
+.schedule-lesson-item .lesson-title a {
+    font-weight: 500;
+}
+.schedule-lesson-item .lesson-meta {
+    font-size: 0.85em;
+}
+.schedule-lesson-item .lesson-meta i {
+    width: 1em;
+}

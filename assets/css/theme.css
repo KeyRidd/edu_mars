@@ -1,0 +1,2041 @@
+:root {
+    /*Цветовая Палитра*/
+    --color-primary: #1A2980;
+    --color-primary-rgb: 26, 41, 128;
+    --color-secondary: #9733EE;
+    --color-secondary-rgb: 151, 51, 238;
+    --color-accent: #00BCD4;
+    --color-accent-rgb: 0, 188, 212;
+
+    --color-success: #198754;
+    --color-success-rgb: 25, 135, 84;
+    --color-danger: #dc3545;
+    --color-danger-rgb: 220, 53, 69;
+    --color-warning: #ffc107;
+    --color-warning-rgb: 255, 193, 7;
+    --color-info: #0dcaf0;
+    --color-info-rgb: 13, 202, 240;
+
+    --text-color-base: #333333;
+    --text-color-muted: #6c757d;
+    --text-color-inverted: #FFFFFF;
+    --text-color-inverted-rgb: 255, 255, 255;
+    --text-color-link: var(--color-primary);
+    --text-color-link-hover: var(--color-secondary);
+    --bs-badge-color:#3c3c3c !important;
+
+    /*Для .chat-message.own*/
+    --color-primary-light-bg: #D0D9FF; 
+
+    /* Фоны (Светлая тема)*/
+    --bg-page: #ffffff;
+    --bg-page-rgb: 255, 255, 255;
+    --bg-component: var(--bg-page);
+    --bg-component-rgb: var(--bg-page-rgb);
+    --bg-component-alt: #f8f9fa;
+     --auth-form-background-light: rgba(var(--bg-page-rgb), 0.85); 
+
+    /*Границы и Тени (Светлая тема)*/
+    --border-color: #e0e0e0;
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.375rem;
+    --border-radius-lg: 0.5rem;
+    --border-radius-xl: 1rem;
+    --border-radius-pill: 50rem;
+    --border-radius-circle: 50%;
+    --border-color-rgb: 224,224,224;
+
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.07);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.07);
+    --shadow-lg: 0 10px 20px rgba(0,0,0,0.07);
+    --shadow-card: 0 4px 15px rgba(var(--color-secondary-rgb), 0.12);
+
+    /* Компоненты (Светлая тема)*/
+    --card-bg: var(--bg-component);
+    --card-header-bg: var(--bg-component-alt);
+    --card-border-radius: var(--border-radius-xl);
+    --card-shadow: var(--shadow-card);
+
+    --btn-text-color: var(--text-color-inverted);
+
+    --alert-success-bg: #d1e7dd; --alert-success-text: #0f5132; --alert-success-border: #badbcc;
+    --alert-danger-bg: #f8d7da;  --alert-danger-text: #842029;  --alert-danger-border: #f5c2c7;
+    --alert-warning-bg: #fff3cd; --alert-warning-text: #664d03; --alert-warning-border: #ffecb5;
+    --alert-info-bg: #cff4fc;    --alert-info-text: #055160;    --alert-info-border: #b6effb;
+
+    --sidebar-width: 260px;
+    --sidebar-bg: #f0f2f5;                     
+    --sidebar-text-color: #333a4d; 
+    --sidebar-link-color: #495057;             
+    --sidebar-link-hover-color: var(--color-primary);
+    --sidebar-link-hover-bg: #e4e6e9;          
+    --sidebar-link-active-color: var(--text-color-inverted); 
+    --sidebar-link-active-bg: var(--color-primary);     
+    --sidebar-header-bg: #d9dde0; 
+    --sidebar-header-text-color: var(--text-color-base); 
+    --sidebar-divider-color: #ced4da; 
+    --sidebar-menu-header-color: #566573; 
+
+    --content-header-bg: var(--bg-component-alt);
+    --empty-state-bg: var(--bg-component-alt);
+    --form-section-bg: var(--bg-component-alt); 
+    --assignment-def-bg: #f0f8ff; 
+    --submission-bg: var(--bg-component);
+    --blockquote-bg: #f0f8ff;
+    --table-header-bg: var(--bg-component-alt);
+    --table-row-hover-bg: #f1f3f5;
+    --table-striped-bg: rgba(0,0,0,.03);
+    --table-border-color: var(--border-color);
+    --chat-bg: #f5f5f5;
+    --material-item-bg: #f9f9f9;
+
+    --dropdown-bg: var(--bg-component);
+    --dropdown-border-color: var(--border-color);
+    --dropdown-shadow: var(--shadow-md);
+    --dropdown-header-bg: var(--content-header-bg); 
+    --dropdown-header-text-color: var(--text-color-base);
+    --dropdown-divider-color: var(--border-color);
+    --dropdown-link-color: var(--text-color-base);
+    --dropdown-link-hover-bg: #e9ecef;
+    --dropdown-text-muted-color: var(--text-color-muted);
+    --notification-unread-bg: #e7f1ff;
+    
+    --navbar-text-color: var(--text-color-inverted);
+    --navbar-icon-color: var(--navbar-text-color);
+    --navbar-icon-hover-color: var(--color-accent);
+
+    --form-input-border-color: #ced4da;
+    --form-input-bg: var(--bg-page);
+    --form-input-text-color: var(--text-color-base);
+    --form-input-focus-border-color: var(--color-secondary);
+    --form-input-focus-box-shadow-rgb: var(--color-secondary-rgb);
+
+    /* Лендинг (Светлая тема)*/
+    --landing-planet-blue-rgb: 70, 130, 235;
+    --landing-planet-deep-blue-rgb: 40, 90, 215;
+    --landing-planet-violet-dark-rgb: 86, 30, 100;
+    --landing-planet-violet-medium-rgb: 114, 19, 137;
+    --landing-planet-violet-bright-rgb: 153, 70, 174;
+    --landing-planet-violet-accent-rgb: 170, 80, 210;
+    --landing-planet-violet-glow-rgb: 180, 100, 220;
+    --landing-planet-violet-highlight-rgb: 210, 150, 240;
+    --landing-planet-turquoise-rgb: 80, 180, 210;
+    --landing-planet-accent-color-rgb: 110, 160, 255; 
+    --landing-orbit-color: rgba(var(--color-secondary-rgb), 0.3);
+    
+    --landing-star-color-rgb: 255, 255, 255; 
+    --landing-star-opacity-base: 0.6;
+    --landing-star-opacity-bright: 0.85;
+    
+    --landing-welcome-pane-bg-rgba: var(--bg-page-rgb), 0.7; 
+    --landing-golden-glow-rgb: 255, 215, 0;                
+
+    --landing-text-color-heading: var(--color-primary);         
+    --landing-text-color-paragraph: var(--text-color-muted);   
+
+    /*рандомные вещи*/
+     --auth-heading-color: var(--text-color-link);
+     --auth-role-selected-bg-opacity: 0.1;
+     --auth-planet-texture-color-rgb: 103, 58, 183;
+     --text-color-base-rgb: 51, 51, 51;
+     --auth-form-max-width: 500px;
+      --navbar-height: 70px;
+
+    /* Новые переменные для цветов полос планет на лендинге */
+    --landing-planet-cyan-stripe-rgb: 100, 190, 230;
+    --landing-planet-blue-stripe-rgb: 60, 120, 230;
+    --landing-planet-light-cyan-stripe-rgb: 130, 190, 230;
+    --landing-planet-sky-stripe-rgb: 80, 150, 200;
+}
+
+   /*Тёмная тема*/
+.dark-mode {
+    /* Палитра */
+    --text-color-base: var(--text-color-inverted);
+    --text-color-muted: #a8b2bc;
+    --text-color-inverted: #333333;
+    --text-color-link: var(--color-accent);
+    --text-color-link-hover: var(--color-secondary);
+
+    /*Для .chat-message.own*/
+    --color-primary-light-bg: #3A4675;
+
+    /* Основные фоны*/
+    --bg-page: #0A1128;
+    --bg-page-rgb: 10, 17, 40;
+     --auth-form-background-dark: rgba(var(--bg-page-rgb), 0.75); 
+    --bg-component: #182040; 
+    --bg-component-alt: #2a3150; 
+    --border-color: #4a4a4a; 
+    --text-color-base: #FFFFFF;
+    --text-color-muted: #a8b2bc; 
+    --auth-heading-color: #B4A0FF;
+
+    /* Границы и Тени */
+    --border-color: #4a4a4a;
+    --shadow-card: 0 4px 15px rgba(var(--text-color-inverted-rgb), 0.05);
+    --border-color-rgb: 74,74,74;
+
+    --bs-card-bg: var(--bg-component-alt);
+    --bs-card-border-color: var(--border-color);
+    --bs-card-cap-bg: var(--bg-component-alt);
+    --bs-body-color: var(--text-color-base);
+
+
+    /* Сообщения (Темная тема) */
+    --alert-success-bg: #0f5132; --alert-success-text: #badbcc; --alert-success-border: #146c43;
+    --alert-danger-bg: #842029;  --alert-danger-text: #f5c2c7;  --alert-danger-border: #a31723;
+    --alert-warning-bg: #664d03; --alert-warning-text: #ffecb5; --alert-warning-border: #806604;
+    --alert-info-bg: #055160;    --alert-info-text: #b6effb;    --alert-info-border: #066a7f;
+
+    /* Сайдбар (Темная тема) */
+    --sidebar-bg: #2c343c; 
+    --sidebar-text-color: #c1c8d2;
+    --sidebar-link-color: #adb5bd;             
+    --sidebar-link-hover-color: #ffffff;       
+    --sidebar-link-hover-bg: #495057;          
+    --sidebar-link-active-color: #ffffff;      
+    --sidebar-header-bg: #212529;              
+    --sidebar-header-text-color: #ffffff;           
+    --sidebar-divider-color: #495057;          
+    --sidebar-menu-header-color: #868e96;     
+    
+    /* Элементы дашбордов и уроков (Темная тема) */
+    --assignment-def-bg: #1c2a48; 
+    --blockquote-bg: #1a243a;
+    --table-row-hover-bg: #2c345a;
+    --table-striped-bg: rgba(var(--bg-page-rgb),.03);
+    --chat-bg: #131E3A;
+    --material-item-bg: #202840;
+
+    /* Выпадающие списки и Уведомления (Темная тема) */
+    --dropdown-shadow: 0 0.5rem 1rem rgba(0,0,0,0.4);
+    --dropdown-link-hover-bg: #3a4160;
+    --notification-unread-bg: #203050;
+
+    /* Лендинг (Темная тема) */
+    --landing-welcome-pane-bg-rgba: var(--bg-page-rgb), 0.6;
+
+    /*тоже рандомные вещи*/
+    --auth-heading-color: #B4A0FF;
+    --auth-role-selected-bg-opacity: 0.3;
+    --text-color-base-rgb: 255, 255, 255;
+    --bs-primary-rgb: 13, 110, 253;
+
+}
+    
+/*Base HTML Element Styles */
+html {
+    box-sizing: border-box;
+    font-size: 16px; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-page) !important;;
+    color: var(--text-color-base);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*для блоков на странице расписания*/
+.dark-mode .text-muted {
+    color: #c1b4b4 !important;
+}
+.dark-mode .page-header .h1, 
+.dark-mode .page-header h1,
+.dark-mode .page-header h2 {
+    color: var(--auth-heading-color); 
+}
+.dark-mode .schedule-controls,
+.dark-mode .schedule-day-card {
+    background-color: var(--bg-component-alt);
+    border-color: var(--border-color);
+}
+.dark-mode .schedule-day-card .list-group-item {
+    background-color: transparent; 
+    border-color: var(--bs-border-color-translucent); 
+    color: var(--bs-light); 
+}
+.dark-mode .bg-primary-subtle,
+.card-footer:last-child {
+    background-color:rgba(255, 255, 255, 0.05) !important;
+}
+/* Стили для ссылок внутри list-group-item */
+.dark-mode .schedule-day-card .list-group-item a {
+    color: var(--bs-primary-rgb); 
+}
+.dark-mode .mb-1 {
+    color: rgb(13 110 253);
+}
+.dark-mode .btn-outline-primary:hover i.fas {
+    color: #adb5bd !important;
+}
+.dark-mode .schedule-day-card .list-group-item a:hover {
+    color: var(--bs-primary);
+}
+.dark-mode .schedule-day-card .list-group-item.list-group-item-action:hover,
+.dark-mode .schedule-day-card .list-group-item.list-group-item-action:focus {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.dark-mode .schedule-controls .form-control,
+.dark-mode .schedule-controls .form-select,
+.dark-mode .schedule-day-card .form-control,
+.dark-mode .schedule-day-card .form-select { 
+    color: var(--bs-light); 
+    background-color: var(--bs-gray-750); 
+    border-color: var(--bs-gray-600);
+}
+.dark-mode .schedule-controls .form-control::placeholder {
+    color: var(--bs-gray-500); 
+}
+.dark-mode .schedule-controls .form-control:focus,
+.dark-mode .schedule-controls .form-select:focus {
+    color: var(--bs-light);
+    background-color: var(--bs-gray-600); 
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+.dark-mode .schedule-controls .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"); /* Светлая стрелка SVG */
+}
+
+/*Global Backgrounds (Stars, Aurora for non-landing pages)*/
+.space-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.dark-mode .space-bg#global-space-bg {
+    opacity: 1;
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(0.5px 0.5px at 15% 20%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-base, 0.7)), transparent),
+        radial-gradient(0.7px 0.7px at 80% 70%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-base, 0.7)), transparent),
+        radial-gradient(1px 1px at 30% 55%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-bright, 0.95)), transparent),
+        radial-gradient(0.8px 0.8px at 65% 30%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-base, 0.7)), transparent),
+        radial-gradient(1px 1px at 50% 85%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-base, 0.7)), transparent),
+        radial-gradient(1.5px 1.5px at 20% 80%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-bright, 0.95)), transparent),
+        radial-gradient(1.8px 1.8px at 90% 40%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-bright, 0.95)), transparent),
+        radial-gradient(1.2px 1.2px at 40% 10%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-bright, 0.95)), transparent),
+        radial-gradient(0.6px 0.6px at 5% 50%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-base, 0.7)), transparent),
+        radial-gradient(1.3px 1.3px at 70% 10%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-bright, 0.95)), transparent),
+        radial-gradient(0.9px 0.9px at 95% 90%, rgba(var(--landing-star-color-rgb, 255,255,255), var(--landing-star-opacity-base, 0.7)), transparent);
+    background-repeat: repeat;
+    background-size: 350px 350px; 
+    will-change: background-position;
+    animation: animateStars 50s linear infinite;
+}
+
+.aurora {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: 
+        linear-gradient(0deg, transparent 50%, rgba(var(--color-accent-rgb), 0.03) 70%, rgba(var(--color-secondary-rgb), 0.05) 85%, transparent 100%),
+        linear-gradient(45deg, rgba(var(--color-primary-rgb), 0.02) 0%, transparent 50%),
+        linear-gradient(-45deg, rgba(var(--color-accent-rgb), 0.02) 0%, transparent 50%);
+    animation: animateAurora 20s ease-in-out infinite alternate;
+    mix-blend-mode: screen; 
+}
+
+.dark-mode .space-bg#global-space-bg .aurora {
+    background: 
+        linear-gradient(90deg, 
+          rgba(var(--color-primary-rgb), 0.2), 
+          rgba(var(--color-secondary-rgb), 0.2),
+          rgba(var(--color-accent-rgb), 0.2),
+          rgba(var(--color-primary-rgb), 0.2));
+}
+
+/*Layout: Container */
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* Обертка для основного содержимого страницы (включая сайдбар и content-area) */
+.main-container-wrapper {
+    display: flex;
+    flex-grow: 1;  
+    padding-top: var(--navbar-height);
+}
+
+/* Обертка непосредственно для области контента */
+.content-area-wrapper {
+    flex-grow: 1; 
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/*Component: Footer*/
+.site-footer { 
+    padding: 20px 30px;
+    background-color: var(--bg-component-alt);
+    color: var(--text-color-muted);         
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    transition: margin-left 0.3s ease-in-out; 
+}
+
+/*Component: Navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px !important; 
+    background: linear-gradient(90deg, #091E3A, #2F80ED, var(--color-secondary));
+    box-shadow: 0 4px 15px rgba(var(--color-primary-rgb), 0.3);
+    position: fixed !important;
+    top: 0;
+    left: 0;     
+    width: 100%;  
+    height: var(--navbar-height); 
+    z-index: 1035; 
+    transition: background-color 0.3s ease;
+}
+.navbar::after { /* Декоративный эффект для навбара */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle, rgba(var(--text-color-inverted-rgb), 0.15) 2px, transparent 2px),
+        radial-gradient(circle, rgba(var(--text-color-inverted-rgb), 0.1) 4px, transparent 4px);
+    background-size: 
+        60px 60px,
+        100px 100px;
+    pointer-events: none;
+    animation: animateNavbarEffect 15s linear infinite;
+}
+
+.navbar .logo { 
+    display: flex;
+    align-items: center;
+    font-size: 24px; 
+    font-weight: bold; 
+    color: var(--navbar-text-color);
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.navbar .logo img { 
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .nav-links { 
+    display: flex;
+    gap: 20px; 
+}
+
+.navbar .nav-links a { 
+    color: var(--navbar-text-color);
+    text-decoration: none;
+    padding: 8px 15px; 
+    border-radius: var(--border-radius-pill); 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background-color: rgba(var(--text-color-inverted-rgb), 0.2); 
+}
+
+.navbar .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--navbar-text-color); 
+}
+/* Стили для имени пользователя */
+.navbar .user-info .user-name-link {
+    display: flex; 
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar .user-info .user-name-link i.fa-user-circle {
+    margin-right: 0.3em;
+}
+
+.navbar .user-info .user-name-link span { 
+    display: inline-block; 
+    max-width: 150px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    vertical-align: middle; 
+}
+.navbar .user-info img { 
+    width: 40px; 
+    height: 40px;
+    border-radius: var(--border-radius-circle); 
+    object-fit: cover;
+    border: 2px solid var(--text-color-inverted); 
+}
+.navbar .nav-links-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    position: relative;
+}
+.navbar .nav-links-container > * { 
+    flex-shrink: 0; 
+}
+
+/* Класс для иконок-кнопок */
+.navbar .nav-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    color: var(--navbar-text-color);
+    text-decoration: none;
+    border-radius: var(--border-radius-circle);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.navbar .nav-link-icon:hover {
+    background-color: rgba(var(--text-color-inverted-rgb), 0.15);
+    color: var(--navbar-icon-hover-color);
+}
+.navbar .nav-link-icon i {
+    font-size: 1.1rem;
+}
+
+.theme-toggle { /* Общие стили для кнопки темы */
+    background: transparent;
+    border: 2px solid var(--navbar-icon-color);
+    color: var(--navbar-icon-color);
+    border-radius: var(--border-radius-pill);
+    padding: 5px 15px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(var(--text-color-inverted-rgb), 0.1); 
+    border-color: var(--navbar-icon-hover-color);
+    color: var(--navbar-icon-hover-color);
+}
+
+/*Page Specific: Landing Page - Welcome Pane*/
+.welcome-content-pane { /* Используется на index.php */
+    position: relative;
+    background-color: rgba(var(--bg-page-rgb), 0.30);
+    backdrop-filter: blur(0.3px) saturate(120%);
+    -webkit-backdrop-filter: blur(8px) saturate(130%);
+    padding: 2.5rem; 
+    border-radius: var(--border-radius-lg); 
+    max-width: 700px; 
+    z-index: 2; 
+    margin: auto;
+    border: 1px solid transparent; 
+    transition: background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.welcome-content-pane::before {
+  content: '';
+      position: absolute;
+      top: -1px; left: -1px; right: -1px; bottom: -1px; 
+      border-radius: inherit;
+      border: 1px solid rgba(var(--color-accent-rgb), 0.5); 
+      box-shadow: none;
+      z-index: -1; 
+      pointer-events: none;
+      transition: border-color 0.3s ease; 
+}
+
+.dark-mode .welcome-content-pane {
+    background-color: transparent !important; 
+    backdrop-filter: none !important;         
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;              
+    border-color: transparent !important;    
+}
+
+.dark-mode .welcome-content-pane::before {
+    display: none !important; 
+}
+
+/* Тени для текста внутри .welcome-content-pane */
+.welcome-content-pane .welcome-section h1,
+.welcome-content-pane .welcome-section p {
+    text-shadow: 0px 1px 2px rgba(var(--text-color-base-rgb, 0,0,0), 0.2);
+}
+
+.dark-mode .welcome-section h1 {
+    color: rgba(var(--text-color-base-rgb), 0.85);
+    text-shadow: none; 
+}
+.dark-mode .welcome-section p {
+    color: rgba(var(--text-color-base-rgb), 0.85); 
+    text-shadow: none;
+}
+
+/*Page Specific: Landing Page - Content Area*/
+.landing-page-body .navbar,
+.landing-page-body .site-footer { 
+    display: none !important; 
+}
+body.landing-page-body {
+    overflow: hidden; 
+}
+
+.welcome-container-wrapper { /* Основная обертка контента на index.php */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    position: relative; 
+    background-color: transparent;
+}
+
+.welcome-section { /* Блок с текстом и кнопками */
+    max-width: 800px;
+    margin-bottom: 3rem; 
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--landing-text-color-heading); 
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.welcome-section p {
+    font-size: 1.1rem; 
+    color: var(--landing-text-color-paragraph); 
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.auth-buttons { /* Контейнер для кнопок Войти/Зарегистрироваться */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1rem; 
+}
+
+.auth-buttons .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    color: var(--btn-text-color);
+    border: none; 
+    border-radius: var(--border-radius-pill); 
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    box-shadow: 0 4px 15px rgba(var(--color-primary-rgb), 0.2); 
+}
+.auth-page-body .btn,
+.landing-page-body .btn,
+.auth-form-container .btn {
+    --bs-btn-border-radius: var(--border-radius-pill);
+}
+/* Состояние :hover для обеих кнопок на лендинге */
+.auth-buttons .btn:hover {
+    color: var(--btn-text-color); 
+    background: var(--color-accent);
+    box-shadow: 0 8px 25px rgba(var(--color-accent-rgb), 0.45); 
+    transform: translateY(-2px);
+}
+
+.dark-mode .auth-buttons .btn:hover {
+    box-shadow: 0 8px 25px rgba(var(--color-accent-rgb), 0.55);
+}
+
+.theme-toggle-container-landing { /* Обертка для кнопки темы на лендинге */
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    z-index: 100; 
+}
+
+#theme-toggle-btn-landing { 
+    background: rgba(var(--text-color-inverted-rgb), 0.1); 
+    border: 1px solid rgba(var(--text-color-inverted-rgb), 0.3);
+    color: var(--text-color-inverted); 
+}
+
+.dark-mode #theme-toggle-btn-landing {
+    background: rgba(var(--bg-page-rgb), 0.2); 
+    border-color: rgba(var(--text-color-base-rgb), 0.2); 
+    color: var(--text-color-base); 
+}
+
+#theme-toggle-btn-landing:hover {
+    background-color: rgba(var(--text-color-inverted-rgb), 0.2);
+}
+.dark-mode #theme-toggle-btn-landing:hover {
+    background-color: rgba(var(--bg-page-rgb), 0.3);
+}
+
+/*Page Specific: Landing Page - Animated Background Circles for Welcome Container*/
+.welcome-container-wrapper::before,
+.welcome-container-wrapper::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 200vw; 
+    height: 200vw;
+    border-radius: 45%; 
+    z-index: -1; 
+    animation: animateLandingSubtleRotate 60s linear infinite, 
+               animateLandingSubtlePulse 10s ease-in-out infinite alternate;
+    will-change: transform, opacity;
+    pointer-events: none; 
+}
+
+/* Стили кругов для СВЕТЛОЙ темы лендинга */
+body.landing-page-body:not(.dark-mode) .welcome-container-wrapper::before {
+    background: radial-gradient(ellipse at center, 
+        rgba(var(--color-accent-rgb), 0.15) 0%, 
+        rgba(var(--color-accent-rgb), 0) 60%
+    );
+    animation-delay: 0s, 0s; 
+}
+
+body.landing-page-body:not(.dark-mode) .welcome-container-wrapper::after {
+    background: radial-gradient(ellipse at center, 
+        rgba(var(--color-secondary-rgb), 0.1) 0%, 
+        rgba(var(--color-secondary-rgb), 0) 60%
+    );
+    animation-duration: 70s, 10s; 
+    animation-delay: -15s, -1.5s;  
+    transform: rotate(45deg);
+}
+
+/* Стили кругов для ТЕМНОЙ темы лендинга */
+body.landing-page-body.dark-mode .welcome-container-wrapper::before {
+    background: radial-gradient(ellipse at center, 
+        rgba(var(--color-accent-rgb), 0.05) 0%, 
+        rgba(var(--color-accent-rgb), 0) 70%
+    );
+}
+
+body.landing-page-body.dark-mode .welcome-container-wrapper::after {
+    background: radial-gradient(ellipse at center, 
+        rgba(var(--color-secondary-rgb), 0.03) 0%, 
+        rgba(var(--color-secondary-rgb), 0) 70%
+    );
+}
+/*ALERT в профиле*/
+body.profile-page .content-area-wrapper > .alert {
+    max-width: 700px;
+    
+}
+
+/*Component: Card*/
+.card-container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px; 
+    margin-top: 30px; 
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--card-border-radius);
+    padding: 20px; 
+    box-shadow: var(--card-shadow);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+    border: 1px solid var(--border-color); 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(var(--color-secondary-rgb), 0.25);
+}
+
+.card::before { /* Декоративная верхняя полоска */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); 
+}
+
+.card h3 {
+    margin-top: 10px;
+    color: var(--text-color-link);
+}
+
+.card p {
+    color: var(--text-color-muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px; 
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color); 
+}
+
+/*Component: Button*/
+.btn {
+    background-color: var(--color-primary);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 8px 20px;
+    border-radius: var(--border-radius-pill);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+}
+
+.btn:hover {
+    box-shadow: var(--shadow-md); 
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+/* Модификатор для градиентной кнопки */
+.btn-gradient {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+.btn-gradient:hover {
+    box-shadow: 0 8px 25px rgba(var(--color-secondary-rgb), 0.4);
+}
+
+/* Основная кнопка */
+.btn-primary {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); 
+    color: var(--btn-text-color);
+}
+.btn-primary:hover {
+    box-shadow: 0 8px 25px rgba(var(--color-secondary-rgb), 0.4);
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--btn-text-color);
+}
+.btn-secondary:hover {
+    background-color: var(--color-accent); 
+    filter: brightness(1.1);
+}
+
+.btn-accent {
+    background-color: var(--color-accent);
+    color: var(--btn-text-color);
+}
+.btn-accent:hover {
+    filter: brightness(0.9);
+}
+
+.btn-success {
+    background-color: var(--color-success);
+    color: var(--btn-text-color);
+}
+.btn-danger {
+    background-color: var(--color-danger);
+    color: var(--btn-text-color);
+}
+
+/* Кнопки-ссылки */
+.btn-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--text-color-link);
+    text-decoration: underline;
+    font-weight: normal;
+}
+.btn-link:hover {
+    color: var(--text-color-link-hover);
+    text-decoration: none;
+    box-shadow: none;
+    transform: none;
+    filter: none;
+}
+
+/*Component: Notification Indicator*/
+.notification { /* Класс для иконки уведомлений */
+    position: relative;
+}
+
+.notification::after { 
+    content: '';
+    position: absolute;
+    top: 0px;   
+    right: 0px;  
+    width: 8px; 
+    height: 8px; 
+    background-color: var(--color-danger);
+    border-radius: var(--border-radius-circle);
+    border: 1px solid var(--navbar-bg); 
+    display: none; 
+}
+
+.notification.has-unread::after {
+    display: block; 
+}
+
+/*Component: Dashboard Header & Controls*/
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.group-selector { 
+    position: relative;
+    width: 200px; 
+}
+
+.group-selector select {
+    width: 100%;
+    padding: 10px 15px; 
+    border-radius: var(--border-radius-md); 
+    border: 1px solid var(--form-input-border-color); 
+    background-color: var(--form-input-bg); 
+    color: var(--form-input-text-color); 
+    font-weight: 500; 
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    line-height: 1.5; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E"); /* Своя SVG стрелка */
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center; 
+    background-size: 16px 12px; 
+    padding-right: 2.5rem; 
+}
+
+.dark-mode .group-selector select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23CCC' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E"); /* Пример для темной темы */
+}
+
+/*Component: Lesson Board / Lesson Page Elements*/
+.lesson-board {
+    background-color: var(--card-bg); 
+    border-radius: var(--card-border-radius); 
+    padding: 30px; 
+    box-shadow: var(--card-shadow); 
+    margin-bottom: 30px; 
+    border: 1px solid var(--border-color);
+}
+
+.lesson-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px; 
+}
+
+.lesson-title {
+    font-size: 22px; 
+    font-weight: bold;
+    color: var(--text-color-link);
+}
+
+.lesson-content {
+    display: flex;
+    gap: 30px; 
+}
+
+.lesson-materials {
+    flex: 2; 
+}
+
+.lesson-chat {
+    flex: 1;
+    background-color: var(--chat-bg);
+    border-radius: var(--border-radius-md); 
+    padding: 15px;
+    max-height: 400px; 
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    padding: 10px; 
+    border-radius: var(--border-radius-sm);
+    background-color: var(--bg-component-alt); 
+    position: relative; 
+    line-height: 1.4;
+}
+
+.chat-message.own {
+    background-color: var(--color-primary-light-bg, #D0D9FF); 
+    margin-left: 30px; 
+}
+
+.chat-user {
+    font-weight: bold; 
+    font-size: 12px; 
+    margin-bottom: 5px; 
+    color: var(--text-color-link); 
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px; 
+    margin-top: 15px; 
+}
+
+.chat-input input[type="text"] { 
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: var(--border-radius-pill); 
+    border: 1px solid var(--form-input-border-color);
+    background-color: var(--form-input-bg);
+    color: var(--form-input-text-color);
+}
+
+/*Component: Material Item*/
+.material-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    padding: 15px;
+    background-color: var(--material-item-bg); 
+    border-radius: var(--border-radius-md);
+    margin-bottom: 15px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.material-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-sm);
+}
+
+.material-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary-light-bg, #D0D9FF); 
+    border-radius: var(--border-radius-sm); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; 
+    color: var(--color-primary); 
+}
+.dark-mode .material-icon {
+    color: var(--color-accent);
+}
+
+.material-details {
+    flex: 1;
+}
+
+.material-title {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--text-color-base);
+}
+
+.material-meta {
+    font-size: 12px; 
+    color: var(--text-color-muted);
+}
+
+/*Page Specific: Authentication Pages (Login, Register)*/
+.auth-page-body { /* Класс для body на страницах login.php, register.php */
+    background: linear-gradient(135deg, #091E3A 0%, #2F80ED 50%, var(--color-secondary) 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    overflow: hidden; 
+    position: relative;
+}
+body.auth-page-body-styling { 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh;
+}
+
+.auth-form-wrapper { 
+    position: relative;
+    z-index: 10;  
+}
+/* Фоновые эффекты для страницы аутентификации */
+.auth-page-body .auth-background-effects { 
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; 
+    z-index: 0; 
+}
+
+/* Форма аутентификации */
+body.landing-page-body.auth-page-content {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.auth-page-main-content { 
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    padding: 20px; 
+    width: 100%; 
+}
+
+.auth-form-wrapper { 
+     position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: var(--auth-form-max-width, 480px);
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.auth-form-container {
+    width: 100%;
+    padding: 25px 35px; 
+    border-radius: var(--border-radius-xl);
+    background-color: var(--auth-form-background-light); 
+    backdrop-filter: blur(8px) saturate(110%);
+    -webkit-backdrop-filter: blur(8px) saturate(110%);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(var(--color-accent-rgb), 0.5);
+    color: var(--text-color-base);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    flex-direction: column; 
+}
+
+.dark-mode .auth-form-container {
+    background-color: var(--auth-form-background-dark);
+    backdrop-filter: blur(10px) saturate(100%);
+    border-color: rgba(var(--border-color-rgb), 0.5); 
+    color: var(--text-color-base);
+}
+
+.register-page-styling .auth-form-container {
+    --auth-form-max-width: 700px;
+    max-width: var(--auth-form-max-width);
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Элементы внутри формы*/
+.auth-form-container > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--auth-heading-color);
+    flex-shrink: 0;
+}
+
+.auth-form-container > .alert { 
+    flex-shrink: 0; 
+    margin-left: -15px; 
+    margin-right: -15px;
+    border-radius: var(--border-radius-md); 
+}
+
+.auth-form-container > form { 
+    flex-grow: 1; 
+    overflow-y: auto;
+    min-height: 0;
+    padding: 0 10px;
+    margin-left: -10px; 
+    margin-right: -10px;
+
+}
+
+.auth-form-container > form .form-group {
+    margin-bottom: 15px;
+}
+
+.auth-form-container > .form-footer { 
+    text-align: center;
+    margin-top: auto;  
+    flex-shrink: 0;  
+    padding-top: 15px; 
+    border-top: 1px solid rgba(var(--border-color-rgb, 224,224,224), 0.3);
+}
+.dark-mode .auth-form-container > .form-footer {
+    border-top-color: rgba(var(--border-color-rgb, 74,74,74), 0.4);
+}
+
+.auth-form-container label {
+    display: block;
+    margin-bottom: 8px; 
+    font-weight: 500; 
+    color: inherit; 
+}
+
+.auth-form-container input[type="text"],
+.auth-form-container input[type="password"],
+.auth-form-container input[type="email"] {
+    width: 100%;
+    padding: 12px 15px; 
+    border-radius: var(--border-radius-md); 
+    border: 1px solid var(--form-input-border-color); 
+    background-color: var(--form-input-bg);
+    color: var(--form-input-text-color); 
+    font-size: 1rem; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.dark-mode .auth-form-container input[type="text"],
+.dark-mode .auth-form-container input[type="password"],
+.dark-mode .auth-form-container input[type="email"] {
+    background-color: rgba(var(--bg-page-rgb), 0.1); 
+    border-color: rgba(var(--border-color-rgb), 0.3); 
+    color: var(--text-color-base);
+    transition: background-color 5000s ease-in-out 0s; 
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.0),
+                inset 0 0 0 100px rgba(var(--bg-page-rgb),0.15); 
+}
+/* Переопределение стилей автозаполнения для WebKit-браузеров */
+.dark-mode .auth-form-container input:-webkit-autofill,
+.dark-mode .auth-form-container input:-webkit-autofill:hover,
+.dark-mode .auth-form-container input:-webkit-autofill:focus,
+.dark-mode .auth-form-container input:-webkit-autofill:active {
+    -webkit-text-fill-color: var(--text-color-base) !important; 
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: var(--text-color-base);
+    filter: none;
+}
+
+.auth-form-container input::placeholder { 
+    color: var(--text-color-muted); 
+    opacity: 1;
+}
+.dark-mode .auth-form-container input::placeholder {
+    color: rgba(var(--text-color-base-rgb), 0.55); 
+}
+
+.auth-form-container input[type="text"]:focus,
+.auth-form-container input[type="password"]:focus,
+.auth-form-container input[type="email"]:focus {
+    border-color: var(--form-input-focus-border-color); 
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(var(--form-input-focus-box-shadow-rgb), 0.2); 
+}
+.dark-mode .auth-form-container input[type="text"]:focus,
+.dark-mode .auth-form-container input[type="password"]:focus,
+.dark-mode .auth-form-container input[type="email"]:focus {
+    background-color: rgba(var(--bg-page-rgb), 0.15); 
+    box-shadow: 0 0 0 3px rgba(var(--form-input-focus-box-shadow-rgb), 0.3); 
+}
+
+.auth-form-container .btn { 
+    width: 100%;
+    padding-top: 12px;    
+    padding-bottom: 12px; 
+    font-size: 1.125rem;  
+    margin-top: 10px;     
+}
+
+.auth-form-container .form-footer {
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 0.875rem; 
+    color: var(--text-color-muted); 
+}
+
+.auth-form-container .form-footer a {
+    color: var(--text-color-link); 
+    text-decoration: none;
+    font-weight: 500; 
+}
+.dark-mode .auth-form-container .form-footer a {
+    color: var(--auth-heading-color);
+}
+.auth-form-container .form-footer a:hover {
+    text-decoration: underline;
+}
+
+.auth-form-container .role-selector { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+    gap: 10px; 
+}
+
+.auth-form-container .role-option {
+    flex: 1;
+    text-align: center;
+    padding: 10px; 
+    border: 1px solid var(--border-color); 
+    border-radius: var(--border-radius-md); 
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--bg-component);
+    color: var(--text-color-base); 
+}
+.dark-mode .auth-form-container .role-option {
+     background-color: rgba(var(--bg-component-rgb), 0.3); 
+     border-color: rgba(var(--border-color-rgb), 0.5);
+     color: var(--text-color-muted); 
+}
+
+.auth-form-container .role-option.selected {
+    border-color: var(--color-secondary); 
+    background-color: rgba(var(--color-secondary-rgb), var(--auth-role-selected-bg-opacity)); 
+    color: var(--color-secondary); 
+}
+.dark-mode .auth-form-container .role-option.selected {
+    color: var(--text-color-base); 
+}
+/*для просмотра пароля в форме регистрации*/
+.password-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+.password-input-wrapper input[type="password"],
+.password-input-wrapper input[type="text"] { 
+    width: 100%; 
+}
+
+.toggle-password-visibility {
+    position: absolute;
+    right: 35px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    cursor: pointer;
+    color: var(--text-color-muted);
+    padding: 0.375rem 0.5rem; 
+    z-index: 3; 
+}
+
+.dark-mode .toggle-password-visibility {
+    color: var(--text-color-muted);
+}
+
+.toggle-password-visibility:hover {
+    color: var(--text-color-link);
+}
+.dark-mode .toggle-password-visibility:hover {
+    color: var(--text-color-link-hover); 
+}
+.auth-form-container input[type="text"].password-visible, 
+.auth-form-container input[type="password"] {
+    padding-right: calc(3rem + 25px); 
+}
+/*Page Specific: Landing Page - Celestial Bodies (Planets & Orbits)*/
+.landing-page-celestial-bodies {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; 
+    z-index: -1; 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.landing-page-body:not(.dark-mode) .landing-page-celestial-bodies {
+    opacity: 1;
+}
+
+/*Page Background Management & Theme-Specific Adjustments*/
+body.landing-page-body:not(.dark-mode) .landing-page-celestial-bodies {
+    opacity: 1; 
+}
+body.landing-page-body:not(.dark-mode) #landing-space-bg { /* Фон со звездами/авророй для лендинга */
+    opacity: 0; 
+}
+body.landing-page-body:not(.dark-mode) #global-space-bg { /* Общий фон со звездами (для других страниц) */
+    opacity: 0; 
+}
+
+body.landing-page-body.dark-mode .landing-page-celestial-bodies {
+    opacity: 0; 
+}
+body.landing-page-body.dark-mode #landing-space-bg {
+    opacity: 1;
+}
+body.landing-page-body.dark-mode #landing-space-bg .stars { /* Убедимся, что звезды внутри видимы */
+    opacity: 1;
+}
+body.landing-page-body.dark-mode #landing-space-bg .aurora { /* Убедимся, что аврора внутри видима */
+    opacity: 1; 
+}
+body.landing-page-body.dark-mode #global-space-bg { 
+    opacity: 0; /* Общий фон со звездами всегда скрыт на лендинге */
+}
+
+body.landing-page-body.dark-mode .welcome-container-wrapper::before {
+    background: radial-gradient(ellipse at center, rgba(var(--color-accent-rgb), 0.05) 0%, rgba(var(--color-accent-rgb), 0) 70%);
+}
+body.landing-page-body.dark-mode .welcome-container-wrapper::after {
+    background: radial-gradient(ellipse at center, rgba(var(--color-secondary-rgb), 0.03) 0%, rgba(var(--color-secondary-rgb), 0) 70%);
+}
+
+/* Обычные страницы */
+body:not(.landing-page-body):not(.auth-page-body) #global-space-bg {
+    opacity: 0; /* По умолчанию общий звездный фон скрыт (в светлой теме) */
+}
+body:not(.landing-page-body):not(.auth-page-body).dark-mode #global-space-bg {
+    opacity: 1; /* Показываем общий звездный фон на обычных страницах в темной теме */
+}
+/* Убедимся, что фоны лендинга скрыты на обычных страницах */
+body:not(.landing-page-body) .landing-page-celestial-bodies,
+body:not(.landing-page-body) #landing-space-bg {
+    opacity: 0;
+}
+
+/* Planets */
+.planet { 
+    position: absolute;
+    border-radius: var(--border-radius-circle); 
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(var(--landing-planet-accent-color-rgb), 0.3); 
+    animation: animateLandingSubtleFloat 20s ease-in-out infinite alternate; 
+}
+
+.planet::before, 
+.planet::after {  
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border-radius: inherit; 
+}
+
+/* Синяя планета */
+.blue-planet {
+    width: 400px; height: 400px;
+    background: radial-gradient(circle at 30% 30%, 
+        rgba(var(--landing-planet-turquoise-rgb), 0.8),
+        rgba(var(--landing-planet-blue-rgb), 0.9),
+        rgba(var(--landing-planet-deep-blue-rgb), 0.95)
+    );
+    left: -150px; top: -130px;
+    animation-duration: 20s; 
+}
+
+.blue-planet::before { /* Полосы */
+    width: 150%; 
+    height: 150%;
+    left: -25%; 
+    top: -25%;
+    background: repeating-linear-gradient(
+        170deg,
+        transparent, transparent 60px,
+        rgba(var(--landing-planet-cyan-stripe-rgb), 0.2) 60px, rgba(var(--landing-planet-cyan-stripe-rgb), 0.2) 80px,
+        transparent 80px, transparent 140px,
+        rgba(var(--landing-planet-blue-stripe-rgb), 0.3) 140px, rgba(var(--landing-planet-blue-stripe-rgb), 0.3) 160px
+    );
+    animation: animateLandingPlanetTexture 70s linear infinite; 
+}
+
+/* Фиолетовая планета */
+.purple-planet {
+    width: 380px; height: 380px;
+    background-size: 150% 150%;
+    background-image: radial-gradient(ellipse at 40% 35%, 
+        rgba(var(--color-secondary-rgb), 0.95),
+        rgba(var(--color-primary-rgb), 1),
+        rgba(var(--bg-page-rgb), 0.8) 
+    );
+    animation: animateLandingSubtleFloat 22s ease-in-out infinite alternate,
+               animateLandingPurplePlanetBG 25s ease-in-out infinite alternate;
+    right: -140px; bottom: -160px; 
+    box-shadow: 0 0 70px rgba(var(--color-secondary-rgb), 0.4),
+                inset -20px -20px 45px rgba(var(--bg-page-rgb), 0.6); 
+}
+
+.purple-planet::before { /* Текстура */
+    width: 110%; height: 110%; left: -5%; top: -5%;
+    background: 
+        radial-gradient(ellipse at 30% 35%, rgba(var(--landing-planet-violet-highlight-rgb), 0.25) 0%, transparent 40%),
+        radial-gradient(ellipse at 70% 60%, rgba(var(--landing-planet-violet-accent-rgb), 0.2) 0%, transparent 35%),
+        repeating-linear-gradient(
+            -35deg,
+            transparent, transparent 15px,
+            rgba(var(--landing-planet-violet-bright-rgb), 0.08) 15px, rgba(var(--landing-planet-violet-bright-rgb), 0.08) 20px,
+            transparent 20px, transparent 35px,
+            rgba(var(--landing-planet-violet-medium-rgb), 0.04) 35px, rgba(var(--landing-planet-violet-medium-rgb), 0.04) 40px
+        );
+    animation: animateLandingPlanetTexture 90s linear infinite;
+    opacity: 0.7;
+}
+
+.purple-planet::after { /* Блики */
+    background-image: 
+        radial-gradient(circle at 60% 65%, rgba(var(--text-color-inverted-rgb), 0.12) 0%, transparent 25%), 
+        radial-gradient(circle at 35% 30%, rgba(var(--landing-planet-violet-highlight-rgb), 0.15) 0%, transparent 20%);
+    animation: animateLandingPlanetTexture 100s linear infinite reverse;
+    opacity: 0.9;
+}
+
+/* Маленькая планета */
+.small-planet {
+    width: 180px; height: 180px;
+    background: radial-gradient(circle at 40% 40%, 
+        rgba(var(--landing-planet-turquoise-rgb), 0.8),
+        rgba(var(--landing-planet-accent-color-rgb), 0.85), 
+        rgba(var(--landing-planet-blue-rgb), 0.9)
+    );
+    right: 30%; top: -80px;
+    animation-duration: 18s; 
+    animation-delay: 5s;    
+}
+
+.small-planet::before { /* Полосы */
+    width: 166.67%; 
+    height: 166.67%;
+    left: -33.33%;
+    top: -33.33%;
+    background: repeating-linear-gradient(
+        100deg,
+        transparent, transparent 15px,
+        rgba(var(--landing-planet-light-cyan-stripe-rgb), 0.3) 15px, rgba(var(--landing-planet-light-cyan-stripe-rgb), 0.3) 25px, 
+        rgba(var(--landing-planet-sky-stripe-rgb), 0.4) 25px, rgba(var(--landing-planet-sky-stripe-rgb), 0.4) 35px
+    );
+    animation: animateLandingPlanetTexture 60s linear infinite;
+}
+
+/* Orbits */
+.orbit {
+    position: absolute;
+    border-radius: var(--border-radius-circle);
+    border-style: solid;
+    border-width: 1px; 
+    opacity: 0.4; 
+    animation: animateLandingComplexOrbit var(--orbit-duration, 60s) linear infinite; 
+    transform-origin: center center;
+    border-color: var(--landing-orbit-color); 
+}
+
+.orbit-1 {
+    width: 90vw; height: 70vh;
+    border-color: rgba(var(--landing-planet-blue-rgb), 0.5); 
+    top: 10%; left: -20%;
+    --orbit-rotate-start: -30deg; --orbit-scale-start: 1;
+    --orbit-translate-x-end: -5vw; --orbit-translate-y-end: 3vh;
+    --orbit-duration: 70s;
+}
+.orbit-2 {
+    width: 80vw; height: 90vh;
+    border-color: rgba(var(--landing-planet-violet-accent-rgb), 0.4); 
+    top: -15%; right: -15%;
+    --orbit-rotate-start: 20deg; --orbit-scale-start: 0.9;
+    --orbit-translate-x-end: 3vw; --orbit-translate-y-end: -4vh;
+    --orbit-duration: 85s;
+    animation-direction: alternate-reverse;
+}
+.orbit-3 {
+    width: 110vw; height: 60vh;
+    border-color: rgba(var(--color-accent-rgb), 0.45); 
+    bottom: 5%; left: -30%;
+    --orbit-rotate-start: 10deg; --orbit-scale-start: 1.1;
+    --orbit-translate-x-end: 4vw; --orbit-translate-y-end: 2vh;
+    --orbit-duration: 65s;
+}
+.orbit-4 {
+    width: 70vw; height: 100vh;
+    border-color: rgba(var(--color-secondary-rgb), 0.35); 
+    top: -20%; left: 40%;
+    --orbit-rotate-start: -45deg; --orbit-scale-start: 0.95;
+    --orbit-translate-x-end: -3vw; --orbit-translate-y-end: -3vh;
+    --orbit-duration: 90s;
+    animation-direction: alternate;
+}
+.orbit-5 {
+    width: 40vw; height: 120vh;
+    border-color: rgba(var(--landing-planet-turquoise-rgb), 0.5); 
+    bottom: -25%; right: 10%;
+    --orbit-rotate-start: 30deg; --orbit-scale-start: 1;
+    --orbit-translate-x-end: 2vw; --orbit-translate-y-end: 4vh;
+    --orbit-duration: 50s;
+    animation-direction: alternate-reverse;
+}
+
+/*Utility Classes & Common Styles*/
+.form-actions,
+.form-buttons { 
+    display: flex; 
+    justify-content: flex-end; 
+    gap: 0.75rem; 
+    margin-top: 1.5rem; 
+}
+
+.assignments-link-section {
+    margin-top: 2rem; 
+    padding-top: 1rem; 
+    border-top: 1px solid var(--border-color); 
+    text-align: center;
+}
+
+.required-mark { 
+    color: var(--color-danger); 
+    margin-left: 2px; 
+    font-weight: bold;
+}
+/* Общие Стили для Кастомных Модальных Окон*/
+.modal { 
+    display: none;
+    position: fixed; 
+    z-index: 1050; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.55); 
+    padding-top: 40px;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.modal-content { /* Внутренний блок модального окна */
+    background-color: var(--bg-component, #ffffff);
+    color: var(--text-color-base, #333333);
+    margin: 5% auto;
+    padding: 20px 25px 25px 25px;
+    border: 1px solid var(--border-color, #cccccc);
+    border-radius: var(--border-radius-lg, 0.5rem);
+    width: 90%;
+    max-width: 600px; 
+    box-shadow: var(--shadow-lg, 0 5px 15px rgba(0,0,0,0.25));
+    position: relative;
+    animation: modal-appear 0.3s ease-out; 
+}
+.dark-mode .modal-content {
+    background-color: var(--bg-component-alt, #2a3150);
+    color: var(--text-color-base, #f1f1f1);
+    border-color: var(--border-color, #4a4a4a);
+}
+
+.modal-header { /* Область заголовка модального окна */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color, #eeeeee);
+}
+.modal-header h2, .modal-header .h5 { /* Заголовок внутри .modal-header */
+    margin-bottom: 0;
+    font-size: 1.25rem; 
+    color: var(--text-color-link);
+}
+.dark-mode .modal-header h2, .dark-mode .modal-header .h5 {
+    color: var(--text-color-link);
+}
+
+
+.modal-body { /* Основное содержимое модального окна */
+    padding-top: 0.5rem;
+}
+
+.modal-footer { /* Область кнопок в модальном окне */
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--border-color, #eeeeee);
+}
+
+.modal-header .close-modal-btn,
+.modal-header .close-btn { 
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--text-color-muted, #6c757d);
+    opacity: 0.7;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+.modal-header .close-modal-btn:hover,
+.modal-header .close-btn:hover {
+    opacity: 1;
+    color: var(--text-color-base);
+}
+
+/* Стили для элементов формы внутри модального окна*/
+.modal .form-group { 
+    margin-bottom: 1rem;
+}
+.modal .form-label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+.modal .form-label .text-danger { /* Для звездочки '*' */
+    color: var(--color-danger, red);
+}
+
+.modal .form-actions { 
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+/*Анимации*/
+@keyframes animateStars {
+  from { background-position: 0 0; }
+  to { background-position: -700px 700px; } 
+}
+
+@keyframes animateAurora { 
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animateNavbarEffect { 
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 60px 60px, 100px 100px;
+  }
+}
+
+@keyframes pulseNotification { 
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(var(--color-accent-rgb), 0.7); 
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(var(--color-accent-rgb), 0); 
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(var(--color-accent-rgb), 0); 
+  }
+}    
+
+@keyframes animateAuthStarsDrift { 
+  0% { background-position: 0 0; }
+  100% { background-position: 500px 1000px; } 
+}
+
+@keyframes animateAuthAuroraWave { 
+  0%, 100% { transform: skewY(-5deg) scale(1.1); opacity: 0.7; }
+  50% { transform: skewY(5deg) scale(1); opacity: 1; }
+}
+
+@keyframes animateAuthParticleFloat { 
+  0% { transform: translateY(100vh) translateX(0vw) rotate(0deg); }
+  100% { transform: translateY(-100px) translateX(calc(var(--particle-drift-x, 20) * 1vw)) rotate(360deg); }
+}
+
+@keyframes animateAuthPlanetTexture { 
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes animateLandingPlanetTexture { 
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes animateLandingSubtleFloat { 
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(8px, 4px); }
+    100% { transform: translate(-4px, -8px); }
+}
+
+@keyframes animateLandingPurplePlanetBG { 
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes animateLandingComplexOrbit { 
+    0% {
+        transform: rotate(var(--orbit-rotate-start, 0deg)) scale(var(--orbit-scale-start, 1)) translateX(0) translateY(0);
+        opacity: var(--landing-orbit-opacity-start, 0.3); 
+    }
+    25% {
+        opacity: var(--landing-orbit-opacity-mid, 0.5);
+    }
+    50% {
+        transform: rotate(calc(var(--orbit-rotate-start, 0deg) + 20deg)) scale(calc(var(--orbit-scale-start, 1) * 1.05)) 
+                   translateX(var(--orbit-translate-x-end, 0)) translateY(var(--orbit-translate-y-end, 0));
+        opacity: var(--landing-orbit-opacity-peak, 0.7);
+    }
+    75% {
+        opacity: var(--landing-orbit-opacity-mid, 0.5);
+    }
+    100% {
+        transform: rotate(calc(var(--orbit-rotate-start, 0deg) + 40deg)) scale(var(--orbit-scale-start, 1)) translateX(0) translateY(0);
+        opacity: var(--landing-orbit-opacity-start, 0.3);
+    }
+}
+
+@keyframes modal-appear {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+/* Small Devices (Landscape Phones, Tablets in Portrait - до 768px)*/
+@media (max-width: 767.98px) {
+    .lesson-content { 
+        flex-direction: column;
+        gap: 20px; 
+    }
+    
+    .card-container { 
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+    
+    .navbar { 
+        padding-left: 15px; 
+        padding-right: 15px;
+    }
+
+    /* Адаптация стилей лендинга */
+    .welcome-section h1 {
+        font-size: 2rem; 
+    }
+    .welcome-section p {
+        font-size: 1rem; 
+    }
+    .auth-buttons .btn {
+        padding: 0.7rem 1.5rem; 
+        font-size: 0.9rem; 
+    }
+    .auth-buttons {
+        gap: 0.75rem; 
+    }
+
+    /* Адаптация формы аутентификации */
+    .auth-form-container { 
+        width: 90%;
+        max-width: 420px; 
+        padding: 30px;
+    }
+    .auth-form-container h2 {
+        font-size: 1.5rem; 
+        margin-bottom: 20px;
+    }
+    .auth-form-container .role-selector {
+        flex-direction: column; 
+    }
+
+    /* Уменьшение глобальных отступов */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px; 
+    }
+}
+/* Extra Small Devices (Portrait Phones - до 576px)*/
+@media (max-width: 575.98px) {
+    body {
+        font-size: 0.95rem; 
+    }
+
+    .welcome-section h1 {
+        font-size: 1.75rem;
+    }
+    .welcome-section p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    .auth-buttons {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+    .auth-buttons .btn {
+        width: 100%; 
+        margin-bottom: 0.5rem; 
+    }
+    .auth-buttons .btn:last-child {
+        margin-bottom: 0;
+    }
+
+    .auth-form-container {
+        padding: 20px; 
+    }
+    .auth-form-container h2 {
+        font-size: 1.3rem;
+    }
+    .auth-form-container .form-group {
+        margin-bottom: 15px;
+    }
+    .auth-form-container input[type="text"],
+    .auth-form-container input[type="password"],
+    .auth-form-container input[type="email"] {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    .auth-form-container .btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    /* Адаптация декоративных элементов лендинга */
+    .blue-planet {
+        width: 250px; height: 250px;
+        left: -100px; top: -80px;
+    }
+    .purple-planet {
+        width: 220px; height: 220px;
+        right: -100px; bottom: -100px;
+    }
+    .small-planet {
+        width: 120px; height: 120px;
+        top: -50px;
+    }
+    .orbit {
+        opacity: 0.2; 
+    }
+}
+
+@keyframes animateLandingSubtleRotate { 
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes animateLandingSubtlePulse { 
+    0% { opacity: 0.3; } 
+    50% { opacity: 0.6; }
+    100% { opacity: 0.3; }
+}
+/*Сайдбар*/
+@media (min-width: 992px) {
+    /* Сдвиг основного контента и подвала */
+    body.sidebar-is-present:not(.sidebar-collapsed) .content-area-wrapper,
+    body.sidebar-is-present:not(.sidebar-collapsed) .site-footer { 
+        margin-left: var(--sidebar-width);
+    }
+    
+    body.sidebar-is-present.sidebar-collapsed .content-area-wrapper,
+    body.sidebar-is-present.sidebar-collapsed .site-footer {
+        margin-left: var(--sidebar-width-collapsed); 
+    }
+
+    /* Поведение сайдбара на десктопе */
+    body.sidebar-is-present .sidebar {
+        transform: translateX(0);
+        top: var(--navbar-height); 
+        height: calc(100vh - var(--navbar-height));
+        z-index: 1030; 
+    }
+
+    /* Кнопки управления мобильным меню скрыты на десктопе */
+    .burger-menu-btn,
+    .sidebar-close-btn {
+        display: none !important; 
+    }
+
+    body.sidebar-open::after,
+    body:not(.sidebar-open)::after {
+        display: none; 
+    }
+}
+
+/* Мобильная версия (сайдбар выезжает) */
+@media (max-width: 991.98px) { 
+    body.sidebar-is-present .content-area-wrapper,
+    body.sidebar-is-present .site-footer {
+        margin-left: 0;
+    }
+
+    /* Поведение сайдбара на мобильных */
+    .sidebar { 
+        transform: translateX(-100%);
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); 
+        top: 0;
+        height: 100vh; 
+        z-index: 1040;
+        width: var(--sidebar-width);
+    }
+    body.sidebar-open .sidebar { 
+        transform: translateX(0); 
+    }
+    
+    /* Кнопки управления мобильным сайдбаром */
+    .burger-menu-btn { 
+        display: block;
+    }
+    .sidebar-close-btn { 
+        display: block; 
+    }
+    
+    /* Оверлей для фона при открытом мобильном сайдбаре */
+    body.sidebar-open::after { 
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1039;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+    body:not(.sidebar-open)::after { 
+        opacity: 0;
+        pointer-events: none;
+    }
+}

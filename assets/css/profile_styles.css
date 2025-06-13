@@ -1,0 +1,206 @@
+.profile-page-grid { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+}    
+@media (min-width: 992px) { 
+    .profile-page-grid { 
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); } 
+    }   
+    .profile-header { 
+        padding: 1.5rem; 
+        margin-bottom: 0; 
+        background-color: #f8f9fa; 
+        border-radius: .25rem; 
+        grid-column: 1 / -1;
+    }
+    .profile-header h1 { 
+        margin-bottom: 0.25rem; 
+    }
+    .user-role { 
+        color: #6c757d; 
+        font-weight: bold; 
+    }
+    .info-section { 
+        background-color: #fff; 
+        border-radius: 8px; 
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+        padding: 1.5rem; 
+    }
+    .info-section h2 { 
+        font-size: 1.1rem; 
+        margin-bottom: 1rem; 
+        padding-bottom: 0.5rem; 
+        border-bottom: 1px solid #eee; 
+        display: flex; 
+        align-items: center;
+    }
+    .info-section h2 i { 
+        margin-right: 8px; 
+        color: #0d6efd; 
+        width: 20px; 
+        text-align: center;
+    }
+    .info-block p { 
+        margin-bottom: 0.6rem; 
+        line-height: 1.4; 
+    }
+    .info-block strong { 
+        margin-right: 5px; 
+    }
+    .groups-list ul { 
+        list-style: none; 
+        padding-left: 0; 
+        margin-bottom: 0;
+    }
+    .groups-list li { 
+        margin-bottom: 0.5rem; 
+    }
+    .groups-list a { 
+        text-decoration: none; 
+    }
+    .activity-list { 
+        list-style: none; 
+        padding-left: 0; 
+        margin-bottom: 0; 
+    }
+    .activity-list li { 
+        margin-bottom: 1rem; 
+        padding-bottom: 1rem; 
+        border-bottom: 1px dashed #eee; 
+    }
+    .activity-list li:last-child { 
+        border-bottom: none; 
+        margin-bottom: 0; 
+        padding-bottom: 0; 
+    }
+    .activity-title { 
+        font-weight: 500; 
+        margin-bottom: 0.2rem; 
+        font-size: 0.95rem; 
+    }
+    .activity-title a { 
+        text-decoration: none; 
+    }
+    .activity-message { 
+        margin-bottom: 0.3rem; 
+        font-size: 0.9rem; 
+    }
+    .activity-meta { 
+        font-size: 0.8em; 
+        color: #6c757d; 
+    }
+    .activity-meta a { 
+        text-decoration: none; 
+        color: #6c757d; 
+    }
+    .action-buttons { 
+        margin-top: 1.5rem; 
+        border-top: 1px solid #eee; 
+        padding-top: 1rem; 
+        text-align: right;
+    }
+    .empty-state { 
+        text-align: center; 
+        color: #6c757d; 
+        padding: 1rem; 
+    }
+/*Стили для Модального Окна Смены Пароля*/
+.modal { 
+    display: none; 
+    position: fixed;
+    z-index: 1050; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 50px;
+}
+.modal-content {
+    background-color: var(--bg-component, #ffffff);
+    color: var(--text-color-base, #333333);  
+    margin: 5% auto;
+    padding: 25px;
+    border: 1px solid var(--border-color, #cccccc);
+    border-radius: var(--border-radius-lg, 8px); 
+    width: 90%;
+    max-width: 500px;
+    box-shadow: var(--shadow-lg, 0 5px 15px rgba(0,0,0,0.3));
+    position: relative;
+}
+.dark-mode .modal-content { 
+    background-color: var(--bg-component, #2f353a);
+    color: var(--text-color-base, #f1f1f1);
+    border-color: var(--border-color, #555);
+}
+/* Заголовок модального окна */
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color-link, var(--color-primary));
+}
+.dark-mode .modal-content h2 {
+    color: var(--text-color-link, var(--color-accent));
+}
+.close-modal-btn-icon {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+}
+.close-modal-btn-icon:hover,
+.close-modal-btn-icon:focus {
+    color: var(--text-color-base, black);
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Стили для элементов формы внутри модального окна */
+.modal-content .form-group {
+    margin-bottom: 1rem;
+}
+.modal-content .form-group label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+.modal-content .form-group label .required { 
+    color: var(--color-danger, red); 
+}
+
+.modal-content .form-control { 
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem; 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--form-input-text-color, #212529);
+    background-color: var(--form-input-bg, #fff);
+    background-clip: padding-box;
+    border: 1px solid var(--form-input-border-color, #ced4da); 
+    border-radius: var(--border-radius-md, .25rem);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.dark-mode .modal-content .form-control {
+    color: var(--form-input-text-color);
+    background-color: var(--form-input-bg);
+    border-color: var(--form-input-border-color);
+}
+.modal-content .form-control:focus {
+    border-color: var(--form-input-focus-border-color, var(--color-primary)); 
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(var(--form-input-focus-box-shadow-rgb, var(--color-primary-rgb)), 0.25); 
+}
+/* Кнопки в модальном окне */
+.modal-content .form-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end; 
+    gap: 0.75rem; 
+}

@@ -1,0 +1,41 @@
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.unread-indicator {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--unread-indicator-bg, rgba(0, 123, 255, 0.9));
+    color: var(--unread-indicator-text, white);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 10;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+.unread-indicator.visible { opacity: 1; pointer-events: auto; }
+.unread-indicator i { margin-left: 5px; }
+.lesson-indicator-chat {
+    font-size: 0.7em;
+    font-weight: 600;
+    padding: 0.2em 0.5em;
+    margin-left: 8px;
+    vertical-align: middle;
+    background-color: var(--info-color, #20c997);
+    color: var(--light-text, white);
+}
+.dark-mode .lesson-indicator-chat {
+    background-color: var(--info-color-dark, var(--info-bg-dark));
+    color: var(--dark-text-on-info-dark, var(--dark-text));
+}
+.lesson-indicator-dot.bg-warning { 
+     background-color: var(--warning-color, #ffc107);
+     box-shadow: 0 0 5px var(--warning-color, #ffc107);
+}
